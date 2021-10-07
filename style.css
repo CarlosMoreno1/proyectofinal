@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    height: 130%;
+  }
+
+  body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+  }
+
+  .grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 80, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .post {
+    grid-area: post;
+  }
+  
+  .post2 {
+    grid-area: post2;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+  
+  .grid-container {
+      display: grid;
+      gap: 0px;
+      grid-template-areas:
+      "header"
+      "sidebar"
+      "post"
+      "post2"
+      "footer";
+  }
+
+  @media (min-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1000px auto;
+      grid-template-rows: 150px 230px 230px 150px;
+      grid-template-areas: 
+      "header header"
+      "post  sidebar"
+      "post2 sidebar"
+      "footer footer";
+    }
+  }
+
+  h1 {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-style: normal;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-style: normal;
+  }
+
+  p {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+  }
+
+  #imagen1 {
+    background: url(../imagenes/imag1.jpg);
+    border-radius: 10px;
+    float: left;
+    height: 600px;
+    margin: 0 45px;
+    width: 450px;
+     -webkit-box-shadow: 2px 4px 6px 2px #333;
+     -moz-box-shadow: 2px 4px 6px 2px #333;
+     -o-box-shadow: 2px 4px 6px 2px #333;
+      box-shadow: 2px 4px 6px 2px #333;
+  }
+
+  #imagen2 {
+    background: url(../imagenes/IMSS.png);
+    float: top;
+    height: 100px;
+    margin: 0 390px;
+    width: 200px;
+  }
+
+  [href^="/"],
+  [href^="http://www.imss.gob.mx/imssdigital"] {
+    color:green;
+    background: none;
+  }
+
+  [href^="/"],
+  [href^="https://twitter.com/GobiernoMX"] {
+    color:green;
+    background: none;
+  }
+
+  [href^="/"],
+  [href^="https://serviciosdigitales.imss.gob.mx/gestionAsegurados-web-externo/asignacionNSS;JSESSIONIDASEGEXTERNO=SbDpXwD1LM0ESFxJdv27CnikKJH0nc7REjnBk0p2R6yPiH0pLz0f!-1464097349"] {
+    color:green;
+    background: none;
+  }
+
+  [href^="/"],
+  [href^="http://www.imss.gob.mx/buzonimss"] {
+    color:green;
+    background: none;
+  }
+
+  [href^="/"],
+  [href^="http://www.imss.gob.mx/patrones/sua"] {
+    color:green;
+    background: none;
+  }
+
+  [href^="/"],
+  [href^="http://www.imss.gob.mx/patrones/sipare"] {
+    color:green;
+    background: none;
+  }
+  
